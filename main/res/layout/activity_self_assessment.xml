@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".SelfAssessment">
+
+        <TextView
+            android:id="@+id/assessHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30sp"
+            android:text="Self Assessment"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/assessLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/assessHeading"
+            android:layout_centerHorizontal="true"
+            android:maxWidth="300sp"
+            android:text="In each area of badminton, rate yourself on the scale of how good you think you are"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/seekLabel1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/assessLabel"
+            android:layout_marginLeft="40sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginBottom="10sp"
+            android:text="Net play: "
+            android:textSize="17sp"/>
+
+        <SeekBar
+            android:id="@+id/seekBar1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/seekLabel1"
+            android:layout_marginHorizontal="20sp"
+            android:max="10"
+            android:progress="5"/>
+
+        <TextView
+            android:id="@+id/seekLabel2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/seekBar1"
+            android:layout_marginLeft="40sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginBottom="10sp"
+            android:text="Defense: "
+            android:textSize="17sp"/>
+
+        <SeekBar
+            android:id="@+id/seekBar2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/seekLabel2"
+            android:layout_marginHorizontal="20sp"
+            android:max="10"
+            android:progress="5"/>
+
+        <TextView
+            android:id="@+id/seekLabel3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/seekBar2"
+            android:layout_marginLeft="40sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginBottom="10sp"
+            android:text="Rear-court Attack: "
+            android:textSize="17sp"/>
+
+        <SeekBar
+            android:id="@+id/seekBar3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/seekLabel3"
+            android:layout_marginHorizontal="20sp"
+            android:max="10"
+            android:progress="5"/>
+
+        <TextView
+            android:id="@+id/seekLabel4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/seekBar3"
+            android:layout_marginLeft="40sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginBottom="10sp"
+            android:text="Mid-court Attack: "
+            android:textSize="17sp"/>
+
+        <SeekBar
+            android:id="@+id/seekBar4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/seekLabel4"
+            android:layout_marginHorizontal="20sp"
+            android:max="10"
+            android:progress="5"/>
+
+        <TextView
+            android:id="@+id/seekLabel5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/seekBar4"
+            android:layout_marginLeft="40sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginBottom="10sp"
+            android:text="Serving: "
+            android:textSize="17sp"/>
+
+        <SeekBar
+            android:id="@+id/seekBar5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/seekLabel5"
+            android:layout_marginHorizontal="20sp"
+            android:max="10"
+            android:progress="5"/>
+
+        <TextView
+            android:id="@+id/seekLabel6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/seekBar5"
+            android:layout_marginLeft="40sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginBottom="10sp"
+            android:text="Court Movement: "
+            android:textSize="17sp"/>
+
+        <SeekBar
+            android:id="@+id/seekBar6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/seekLabel6"
+            android:layout_marginHorizontal="20sp"
+            android:max="10"
+            android:progress="5"/>
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/seekBar6"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15sp"
+            android:layout_marginBottom="30sp"
+            android:text="Submit"
+            android:onClick="onSubmit"/>
+    </RelativeLayout>
+
+</ScrollView>

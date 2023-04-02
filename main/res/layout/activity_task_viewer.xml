@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <RelativeLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".TaskViewer">
+
+        <TextView
+            android:id="@+id/taskArea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60sp"
+            android:text="Heading"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/taskDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/taskArea"
+            android:layout_marginTop="30sp"
+            android:maxWidth="300sp"
+            android:text="TextView"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/calReminder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/taskDesc"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="30sp"
+            android:onClick="addToCalendar"
+            android:text="Put in Calendar" />
+
+        <Button
+            android:id="@+id/deleteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/calReminder"
+            android:layout_centerHorizontal="true"
+            android:onClick="deleteTask"
+            android:text="Delete"
+            android:layout_marginBottom="30sp"/>
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+<RelativeLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".TaskCreater">
+
+    <EditText
+        android:id="@+id/areaText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/label1"
+        android:layout_marginBottom="30sp"
+        android:ems="10"
+        android:hint="Title" />
+
+    <EditText
+        android:id="@+id/descriptionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/label2"
+        android:ems="10"
+        android:hint="Description" />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/descriptionText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20sp"
+        android:onClick="addTask"
+        android:text="Add"
+        tools:layout_editor_absoluteX="77dp"
+        tools:layout_editor_absoluteY="268dp" />
+
+    <TextView
+        android:id="@+id/label1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50sp"
+        android:layout_marginTop="50sp"
+        android:text="Task Area:"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/label2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/areaText"
+        android:layout_marginLeft="50sp"
+        android:text="Task Description:"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+</RelativeLayout>
+
+</ScrollView>

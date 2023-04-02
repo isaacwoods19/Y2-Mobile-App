@@ -1,0 +1,97 @@
+@charset "utf-8";
+body {
+    font: 0.875em/1.4 Verdana, Arial, Helvetica, sans-serif;
+    background-color: #F5F5F5;
+    margin: 0;
+    padding: 0;
+    color: #000;
+}
+header, section, footer, aside, article, figure {
+    display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin-top: 0;
+    padding-right: 2.5%;
+    padding-left: 2.5%;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: Arial;
+}
+
+#main {
+    width: 100%;
+    max-width:960px;
+    min-width:350px;
+    margin: 0 auto;
+    background-color: #4087BD;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+header {
+    width:100%;
+    background-color: #0B5187;
+    overflow: hidden;
+}
+
+header h1 {
+    font-size: 3.43em;
+    margin-top: 1em;
+    margin-left: 25%;
+    color: #F5F5F5;
+    text-decoration: underline;
+}
+
+article {
+    padding: 0;
+    width: 100%;
+    float: left;
+    background-color: #d3d3d3;
+}
+
+article h2 {
+    font-size: 1.71em;
+    color: #d60201;
+    text-decoration: underline;
+}
+
+.center{
+    margin-left: 25%;
+}
+
+footer {
+    width:100%;
+    padding: 1.04% 0;
+    background-color: #0B5187;
+    clear: both;
+}
+
+@media screen and (max-width:439px){
+    header h1{
+        font-size:2em;
+    }
+    article h1{
+        font-size:1em;
+    }
+    article{
+        width:100%;
+    }
+
+}
+
+@media screen and (min-width:440px) and (max-width:760px){
+    header h1{
+        font-size:3em;
+    }
+    article h1{
+        font-size:1.5em;
+    }
+    article{
+        width:100%;
+        order:3;
+    }
+    footer{
+        order:4;
+    }
+}

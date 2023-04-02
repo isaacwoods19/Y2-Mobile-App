@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Coach">
+
+    <TextView
+        android:id="@+id/coachHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30sp"
+        android:text="Coach"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/coachLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/coachHeading"
+        android:layout_centerHorizontal="true"
+        android:maxWidth="320sp"
+        android:text="Here you can apply for a personal coach that can recommend specific tasks better suited to your ability! You can also keep track of previous tasks they have given you"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/coachLabel2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/coachLabel"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="30sp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:text="You do not currently have a coach" />
+
+    <Button
+        android:id="@+id/applyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/coachLabel2"
+        android:layout_marginLeft="30sp"
+        android:layout_marginBottom="20sp"
+        android:onClick="onApply"
+        android:text="Apply" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:id="@+id/layout"
+        android:orientation="vertical"
+        android:layout_below="@+id/applyButton">
+
+        <LinearLayout
+            android:id="@+id/row1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/heading1"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:text="Area"
+                android:textSize="25sp"
+                android:textColor="#000000"
+                android:paddingHorizontal="10sp"
+                android:layout_marginHorizontal="1sp"
+                android:background="#b0b0b0"/>
+
+            <TextView
+                android:id="@+id/heading2"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="Description"
+                android:textSize="25sp"
+                android:textColor="#000000"
+                android:paddingLeft="10sp"
+                android:layout_marginHorizontal="1sp"
+                android:background="#b0b0b0"/>
+
+            <TextView
+                android:id="@+id/heading3"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:text="Action"
+                android:textSize="25sp"
+                android:textColor="#000000"
+                android:layout_marginHorizontal="1sp"
+                android:paddingLeft="10sp"
+                android:background="#b0b0b0"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/applyButton"
+        android:layout_below="@+id/coachLabel2"
+        android:layout_marginTop="40sp"
+        android:layout_marginLeft="30sp"
+        android:textColor="#000000" />
+
+</RelativeLayout>
+</ScrollView>

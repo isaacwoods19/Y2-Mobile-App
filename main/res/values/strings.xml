@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Coursework</string>
+
+    <string name="pref_key">com.example.coursework.LogInActivity</string>
+</resources>

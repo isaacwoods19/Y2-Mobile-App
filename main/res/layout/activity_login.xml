@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/loginView"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogInActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/userText"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="40dp"
+        android:text="Please Sign in"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/userText"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/passwordText"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="99dp"
+        tools:layout_editor_absoluteY="215dp" />
+
+    <EditText
+        android:id="@+id/passwordText"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="99dp"
+        tools:layout_editor_absoluteY="278dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroup"
+        android:layout_alignStart="@+id/passwordText"
+        android:onClick="logIn"
+        android:text="Log in"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="346dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroup"
+        android:layout_alignEnd="@+id/passwordText"
+        android:onClick="signIn"
+        android:text="Sign up" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordText"
+        android:layout_toLeftOf="@+id/radioGroup"
+        android:paddingTop="5dp"
+        android:textSize="18dp"
+        android:text="Are you a coach?" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordText"
+        android:layout_alignEnd="@+id/passwordText"
+        android:orientation="horizontal"
+        android:paddingTop="3dp">
+
+        <RadioButton
+            android:id="@+id/yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#000000"
+            android:text="Yes" />
+
+        <RadioButton
+            android:id="@+id/no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#000000"
+            android:checked="true"
+            android:text="No" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/userGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User Guide"
+        android:onClick="gotoUserGuide"/>
+
+</RelativeLayout>

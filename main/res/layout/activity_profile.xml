@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Profile">
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50sp"
+        android:layout_marginBottom="10sp"
+        android:text="Profile"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/forename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/heading"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30sp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Forename" />
+
+    <EditText
+        android:id="@+id/surname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/forename"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Surname" />
+
+    <EditText
+        android:id="@+id/height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/surname"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Height (cm)" />
+
+    <EditText
+        android:id="@+id/weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/height"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:hint="Weight (kg)" />
+
+    <EditText
+        android:id="@+id/years"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/weight"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Years played" />
+
+    <EditText
+        android:id="@+id/about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/years"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:lines="4"
+        android:gravity="top|left"
+        android:maxLines="4"
+        android:hint="About you"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/about"
+        android:layout_centerHorizontal="true"
+        android:onClick="updateProfile"
+        android:text="Update" />
+
+    <TextView
+        android:id="@+id/labelcm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/weight"
+        android:layout_marginBottom="15sp"
+        android:layout_toRightOf="@+id/height"
+        android:text="cm"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/labelkg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/years"
+        android:layout_marginBottom="15sp"
+        android:layout_toRightOf="@+id/weight"
+        android:text="kg"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/labelyrs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/about"
+        android:layout_marginBottom="15sp"
+        android:layout_toRightOf="@+id/years"
+        android:text="years"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
+</ScrollView>
